@@ -1,0 +1,169 @@
+body{
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Kumbh Sans', sans-serif;
+	font-size: 12px;
+	background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+}
+
+.main-container{
+	max-width: 1440px;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.flex-box{
+	display: flex;
+}
+
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	border-radius: 1.5rem;
+	width: 57rem;
+}
+
+.content-1-desktop{
+	overflow: hidden;
+	position: relative;
+	height: 28rem;
+}
+
+.content-1-shadow{
+	position: absolute;
+}
+
+.desktop-shadow{
+	position: relative;
+	top: -20rem;
+	left: -35rem;
+}
+
+.desktop-img{
+	position: relative;
+	right: 5rem;
+	top: 2.5rem;
+}
+
+.content-1-desktop-2{
+	position: relative;
+}
+
+.desktop-box{
+	position: absolute;
+	right: 25rem;
+	top: -3.2rem;
+}
+
+.content-1{
+	display: none;
+	height: 7rem;
+}
+
+.content-2{
+	width: 40%;
+	padding-right: 5rem;
+}
+
+.faq-text{
+	margin-bottom: 2rem;
+	font-size: 15px;
+}
+
+.box{
+	margin-bottom: 1.5rem;
+	padding-bottom: 1rem;
+	border-bottom: solid 1px hsl(240, 5%, 91%);
+}
+
+.box-end{
+	padding-bottom: 1rem;
+	border-bottom: solid 1px hsl(240, 5%, 91%);
+}
+
+.question-div{
+	font-size: 13px;
+	margin-bottom: 0.5rem;
+}
+
+.question-div:hover{
+  cursor: pointer;
+  color: hsl(14, 88%, 65%);
+}
+
+.arrow{
+	float: right;
+}
+
+.answer-div{
+	line-height: 1rem;
+	display: none;
+}
+
+.attribution{
+	margin-top: 2rem;
+}
+
+@media only screen and (max-width: 1081px) {
+
+	.container{
+		flex-direction: column;
+		width: 17rem;
+		margin-top: 5rem;
+		padding: 1.5rem;
+	}
+
+	.content-1-desktop{
+		display: none;
+	}
+
+	.content-1{
+		display: inline-block;
+		height: 7rem;
+	}
+
+	.desktop-box{
+		display: none;
+	}
+
+	.mobile-img{
+		display: inline-block;
+		position: relative;
+		right: 0.6rem;
+		bottom: 14.8rem;
+	}
+
+	.mobile-shadow{
+		display: inline-block;
+		position: relative;
+		left: 1rem;
+		bottom: 1.5rem;
+	}
+
+	.content-2{
+		width: 100%;
+		padding-right: 0;
+	}
+
+	.faq-text{
+		text-align: center;
+	}
+
+	.box-end{
+		margin-bottom: 1rem;
+	}
+}
+
+@media only screen and (max-width: 375px) {
+
+	.main-container{
+		max-width: 375px;
+	}
+}
