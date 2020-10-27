@@ -1,6 +1,7 @@
 let questions = document.querySelectorAll('.question-div');
 let answers = document.querySelectorAll('.answer-div');
 let arrows = document.querySelectorAll('.arrow');
+let box = document.querySelector('.desktop-box');
 
 // console.log(questions);
 // console.log(answers);
@@ -16,17 +17,23 @@ for (let i = 0; i < questions.length; i++) {
           answers.item(j).style.display = 'none';
           arrows.item(j).style.transition = '.25s';
           arrows.item(j).style.transform = 'rotate(0deg)';
+          box.style.transition = '.5s';
+          box.style.transform = 'translateX(0)';
         }
       }
       questions.item(i).style.fontWeight ='700';
       answers.item(i).style.display = 'block';
       arrows.item(i).style.transition = '.25s';
       arrows.item(i).style.transform = 'rotate(180deg)';
+      box.style.transition = '.5s';
+      box.style.transform = 'translateX(-40px)';
     } else {
       questions.item(i).style.fontWeight ='400';
       answers.item(i).style.display = 'none';
       arrows.item(i).style.transition = '.25s';
       arrows.item(i).style.transform = 'rotate(0deg)';
+      box.style.transition = '.5s';
+      box.style.transform = 'translateX(0)';
     }
   });
 }
